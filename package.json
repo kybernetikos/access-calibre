@@ -4,7 +4,7 @@
   "description": "A JavaScript library and MCP server to connect to a local Calibre Content Server and grab portions of ebooks.",
   "main": "index.js",
   "bin": {
-    "access-calibre": "./bin/mcp-server.js"
+    "access-calibre": "bin/mcp-server.js"
   },
   "files": [
     "index.js",
