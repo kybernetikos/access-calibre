@@ -22,6 +22,26 @@ const LOG_ENABLED = process.argv.includes('--verbose') || process.argv.includes(
 const LOG_FILE_ARG = process.argv.find(arg => arg.startsWith('--log-file='));
 const LOG_FILE = LOG_FILE_ARG ? LOG_FILE_ARG.split('=')[1] : null;
 
+if (process.argv.includes('--help') || process.argv.includes('-h')) {
+  console.log(`
+Calibre Reader MCP Server
+
+Usage:
+  npx access-calibre [options]
+
+Options:
+  --verbose, -v       Enable detailed logging to stderr
+  --log-file=PATH     Write logs to the specified file
+  --help, -h          Show this help message
+
+Environment Variables:
+  CALIBRE_URL         The URL of your Calibre Content Server (default: http://[::1]:8080/)
+  CALIBRE_USERNAME    Optional username for authentication
+  CALIBRE_PASSWORD    Optional password for authentication
+  `);
+  process.exit(0);
+}
+
 function log(message, data = null) {
   if (LOG_ENABLED || LOG_FILE) {
     const timestamp = new Date().toISOString();

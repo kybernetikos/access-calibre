@@ -58,6 +58,13 @@ You can combine both to see logs in `stderr` and save them to a file:
 npx access-calibre --verbose --log-file=server.log
 ```
 
+#### Help
+You can see all available options by providing the `--help` (or `-h`) argument:
+
+```bash
+npx access-calibre --help
+```
+
 #### Claude Desktop
 
 You can run the MCP server directly using `npx` (useful for Claude Desktop or other MCP clients):
