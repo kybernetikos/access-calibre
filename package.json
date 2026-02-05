@@ -1,6 +1,6 @@
 {
   "name": "access-calibre",
-  "version": "1.3.0",
+  "version": "1.3.2",
   "description": "A JavaScript library and MCP server to connect to a local Calibre Content Server and grab portions of ebooks.",
   "main": "index.js",
   "bin": {
@@ -21,6 +21,14 @@
   "keywords": ["mcp", "calibre", "llm", "book", "books"],
   "author": "kybernetikos <me@kybernetikos.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kybernetikos/access-calibre.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kybernetikos/access-calibre/issues"
+  },
+  "homepage": "https://github.com/kybernetikos/access-calibre#readme",
   "type": "commonjs",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.25.3",
