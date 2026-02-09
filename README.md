@@ -1,7 +1,10 @@
 # access-calibre
 
-> [!NOTE]
+> [!WARNING]
 > This package has been entirely vibe-coded by Junie in JetBrains IntelliJ and not human checked.
+
+> [!NOTE]
+> Given the risk of using vibe-coded libraries, I've decided that I prefer the native sandboxing that deno provides.  Check out the [access-calibre-deno](https://github.com/kybernetikos/access-calibre-deno) library instead.
 
 A JavaScript library to connect to a local Calibre Content Server and grab portions of ebooks.
 
@@ -17,6 +20,7 @@ This library includes an MCP (Model Context Protocol) server that allows LLMs to
 - `list_libraries`: List available libraries.
 - `search_books`: Search for books using Calibre's search syntax (e.g. by title, author: "author:Asimov").
 - `list_books`: List all books in a library.
+- `list_epub_files`: List all files available within an EPUB (e.g., HTML, CSS, images, fonts).
 - `list_chapters`: List the chapters of a book in reading order.
 - `get_chapter_content`: Retrieve the HTML content of a specific chapter.
 - `get_chapter_content_markdown`: Retrieve the content of a specific chapter converted to Markdown (generally better for LLMs).
